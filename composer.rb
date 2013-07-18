@@ -2568,7 +2568,6 @@ case RbConfig::CONFIG['host_os']
       # was it already added for bootstrap-less?
       unless prefer :bootstrap, 'less'
         say_wizard "recipe adding 'therubyracer' JavaScript runtime gem"
-        add_gem 'libv8'
         add_gem 'therubyracer', :group => :assets, :platform => :ruby, :require => 'v8'
       end
     end
